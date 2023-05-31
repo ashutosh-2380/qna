@@ -2,7 +2,7 @@ import streamlit as st
 from transformers import pipeline
 
 # Load the question answering model
-model = pipeline("question-answering")
+model = pipeline("question-answering", model="distilbert-base-uncased-distilled-squad")
 
 # Set up the Streamlit app
 st.title("Question Answering App")
